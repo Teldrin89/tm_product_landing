@@ -14,9 +14,27 @@
     <script src="https://kit.fontawesome.com/539ce6716a.js" crossorigin="anonymous"></script>
     <title>Product Landing Page - Keyboard Example</title>
 </head>
-<body>
-    
+<!-- create the navbar that will help getting around the page - still single page -->
+<body id="home">
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Keyboard</h1>
+            <ul class="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- jquery cdn link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- link the js script for lightbox - image gallery viewer -->
     <script src="js/simple-lightbox.js"></script>
+    <!-- initialize jquery with simple script -->
+    <script>
+        // a simple function that will intialize the gallery variable
+        $(function() {
+            const $gallery = $('.gallery a').simpleLightbox();
+        })
+    </script>
 </body>
 </html>
