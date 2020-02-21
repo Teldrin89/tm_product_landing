@@ -87,12 +87,12 @@ img {
     color: #555;
 }
 
-/* section A styling - margin */
+/* section-a styling - margin */
 .section-a {
     margin: 2rem 0;
 }
 
-/* section A container  */
+/* section-a container  */
 .section-a .container {
     display: grid;
     /* two even columns */
@@ -103,18 +103,18 @@ img {
     justify-content: center;
 }
 
-/* header of section A */
+/* header of section-a */
 .section-a h1 {
     font-size: 4rem;
     color: var(--primary-color);
 }
 
-/* paragrpah of section A */
+/* paragrpah of section-a */
 .section-a p {
     margin: 1rem 0;
 }
 
-/* section B styling */
+/* section-b styling */
 .section-b {
     position: relative;
     /* background image as overlay */
@@ -153,6 +153,34 @@ img {
     margin-top: 1rem;
 }
 
+/* section-c styling */
+.section-c .gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* styling for the grid of pictures */
+/* 1st pic */
+.section-c .gallery a:first-child {
+    /* start at 1 and end at 3 */
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+/* 2nd pic */
+.section-c .gallery a:nth-child(5) {
+    grid-row: 1/3;
+    grid-column: 4/6;
+}
+/* 3rd pic */
+.section-c .gallery a:nth-child(3) {
+    grid-row: 2/3;
+    grid-column: 3/5;
+}
+
+.section-c .gallery img, .section-c .gallery a {
+    width: 100%;
+    height: 100%;
+}
 /* Utilities */
 /* Button */
 .btn {
