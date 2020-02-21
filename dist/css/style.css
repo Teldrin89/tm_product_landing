@@ -86,3 +86,47 @@ img {
 .navbar .nav a:hover {
     color: #555;
 }
+
+/* section A styling - margin */
+.section-a {
+    margin: 2rem 0;
+}
+
+/* section A container  */
+.section-a .container {
+    display: grid;
+    /* two even columns */
+    grid-template-columns: repeat(2, 1fr);
+    /* put gap in between */
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* header of section A */
+.section-a h1 {
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+/* paragrpah of section A */
+.section-a p {
+    margin: 1rem 0;
+}
+
+/* Utilities - button */
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 30px;
+}
+
+/* BTN hover - separate section */
+.btn:hover {
+    background: var(--secondary-color);
+}
