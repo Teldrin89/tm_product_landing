@@ -56,38 +56,36 @@
         <!-- class "big" from lightbox library -->
         <div class="gallery">
             <a href="img/akambb.jpg" class="big">
-                <img src="img/akambb.jpg" alt="">
+                <img src="img/akambb.jpg" alt=""/>
             </a>
-        </div>
-        <div class="gallery">
-            <a href="img/acucc.jpg" class="big">
-                <img src="img/acucc.jpg" alt="">
-            </a>
-        </div>
-        <div class="gallery">
             <a href="img/kdww.jpg" class="big">
-                <img src="img/kdww.jpg" alt="">
+                <img src="img/kdww.jpg" alt=""/>
             </a>
-        </div>
-        <div class="gallery">
+            <a href="img/amkwnpotnw.jpg" class="big">
+                <img src="img/amkwnpotnw.jpg" alt=""/>
+            </a>
+            <a href="img/acucc.jpg" class="big">
+                <img src="img/acucc.jpg" alt=""/>
+            </a>
+            <a href="img/RE1J7QB.jpg" class="big">
+                <img src="img/RE1J7QB.jpg" alt=""/>
+            </a>
             <a href="img/cupok.jpg" class="big">
-                <img src="img/cupok.jpg" alt="">
+                <img src="img/cupok.jpg" alt=""/>
             </a>
-        </div>
-        <div class="gallery">
             <a href="img/mk.jpg" class="big">
-                <img src="img/mk.jpg" alt="">
+                <img src="img/mk.jpg" alt=""/>
             </a>
         </div>
     </section>
     <!-- jquery cdn link -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- link the js script for lightbox - image gallery viewer -->
-    <script src="js/simple-lightbox.js"></script>
+    <script src="/dist/js/simple-lightbox.js"></script>
     <!-- initialize jquery with simple script -->
-    <script>
+    <script id="render-js">
         // a simple function that will intialize the gallery variable
-        (function(){
+        $(function() {
             const $gallery = $('.gallery a').simpleLightbox();
         });
     </script>
