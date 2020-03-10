@@ -246,6 +246,43 @@ img {
     margin-top: 1rem;
 }
 
+.email-form .form-control {
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    color: #ddd;
+    background-color: transparent;
+    font-family: inherit;
+    margin: 0;
+    padding: 0 3rem 0 1.5rem;
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+}
+
+/* different formatting for just the submit button */
+.email-form .submit {
+    display: inline-block;
+    /* absolute position to move the button to right side */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #eee;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    color: #333;
+    cursor: pointer;
+    /* rounded corners on the outside only */
+    border-radius: 0 10px 10px 0;
+}
+
 /* Utilities */
 /* Button */
 .btn {
